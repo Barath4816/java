@@ -12,8 +12,8 @@ public static void main(String args[]){
 //clinic();
 //series(15);
 //series2(8);
-vowelconsonant();
-
+//vowelconsonant();
+fuelConsumption(20,150);
 }
 static void triangle(int n){
 for(int i=0;i<n;i++,System.out.println()){
@@ -175,5 +175,8 @@ str4+=str2.charAt(i);}
 str4+=str3.toUpperCase();
 System.out.println(str4);
 }
+
+static void fuelConsumption(int fuel,int distence);
+int
 }
 
