@@ -13,11 +13,11 @@ public class Main{
 		//lcm(12,16);
 		//perfectNum(12);
 		//strongNum(155);
-		//oddOrEvenBit(7);
+		oddOrEvenBit(7);
 		//swapping(7,8);
 		//oddOrEvenShift(8);
 		//octalAddition(48,62);
-		binaryAddition(01,11);
+		//binaryAddition(01,11);
 		//hexaAddition();
 }
 	static void oddoreven(int n){
@@ -234,6 +234,8 @@ System.out.print(sum);
 			carry=sum/16;
 		}
 		System.out.print(output);
+		sc1.close();
+		sc2.close();
 	}
 
 	static int number(char x){

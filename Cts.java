@@ -14,7 +14,7 @@ class Main
         x1 = x2 = bx;
         y1 = y2 = by;
         for(i=1;i<=3;i++)
-        {
+        {d
             x1 = x1 + 1;
             y1 = y1 + 1;
             x2 = x2 - 1;
