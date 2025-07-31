@@ -71,10 +71,10 @@ public class SamplClass {
        //anagram();
        //stringAdd();
        //caseChanging();
-
+       //vowelscount();
+       recursion();
     }
-
-    static void butterfly(){
+   static void butterfly(){
         int n=5;
         for(int i=1;i<n;i++,System.out.println()){
             for(int j=1;j<=i;j++,System.out.print(" ")){
@@ -491,19 +491,68 @@ public class SamplClass {
         char arr[]=str.toCharArray();
         int i=0;
         for(char ch:arr){
-            if(Character.isUpperCase(ch)){
-                arr[i]=Character.toLowerCase(ch);
-               System.out.print(arr[i]) ;
+            //method 1
+            if(ch>='A'&&ch<='Z'){
+                arr[i]=(char)(ch+32);
             }
             else{
+                //method 2
                 arr[i]=Character.toUpperCase(ch);
-                 System.out.print(arr[i]) ;
             }
             i++;
         }
+        System.out.println(new String(arr));
+    }
+    static void vowelscount(){
+        String str="Hel,lo";
+        int v=0;
+        int c=0;
+        for(char ch:str.toCharArray()){
+            if(ch>='A'&&ch<='Z'||ch>='a'&&ch<='z'){
+                if(("aeiouAeiou").contains(ch+"")){
+                    v++;
+                }
+                else c++;
+            }
+        }
+        System.out.println("V: "+v);
+         System.out.println("C: "+c);
+    }
+    static void recursion(){
+        int n=5;
+        int num=0;
+        //continuous(num,n);
+        String str="madam";
+       /*boolean output=isPalindrome(str,0,str.length()-1);
+        if(output){
+            System.out.println("palindrome");
+        }
+        else System.out.println("Not palindrome");*/
+        int output=countzero(1023408010);
+        System.out.println(output);
+    }
+    static void continuous(int i,int num){
+        if(i<num){
+            System.out.println(i);
+            continuous(i+1,num);
+        }
+       
+    }
+    static boolean isPalindrome(String check,int start,int end){
+      
+            if(check.charAt(start)!=check.charAt(end)){
+                return false;
+            }
+                if(start>=end){
+                   return true;
+                }
+               return isPalindrome(check,start+1,end-1);
+
+        }
+    static int countzero(int n){
+        
+    }
+    
     }
 
-
-
-}
 
