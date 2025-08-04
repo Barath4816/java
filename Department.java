@@ -4,7 +4,7 @@ public class Department extends student{
        super(name, regnumber, collegeName);
         this.deptName=deptName;
     }
-void deptprint(){
+void deptprint(){ 
         System.out.println("Department Name "+deptName);
          
     }

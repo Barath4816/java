@@ -14,7 +14,7 @@ class Main
         x1 = x2 = bx;
         y1 = y2 = by;
         for(i=1;i<=3;i++)
-        {d
+        {
             x1 = x1 + 1;
             y1 = y1 + 1;
             x2 = x2 - 1;
@@ -95,5 +95,13 @@ class Main
             System.out.println();
         }
     }
+
+	static void spiralMatrix(int arr[][]){
+		int top=0,left=0;
+		int bottom=arr[0].length,right=arr.length;
+		while(top<bottom&&left<right){
+			
+		
 }
+
 
